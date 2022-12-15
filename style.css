@@ -129,7 +129,7 @@ hr:not([size]) {
 
 /*header*/
 header {
-    background-image: url("../images/ancienne-eglise-paroissiale-de-sant-appiano_zoom.jpg");
+    background-image: url("./assets/images/ancienne-eglise-paroissiale-de-sant-appiano_zoom.jpg");
 	height: 50vh;
 	width: 100%;
 	background-position: center;
