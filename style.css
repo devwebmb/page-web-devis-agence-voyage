@@ -187,7 +187,7 @@ grey font : #817d7a*/
 }
 
 .background-white {
-	background: var(--white);
+  background: var(--white);
 }
 
 .border-white {
@@ -219,16 +219,26 @@ hr:not([size]) {
   padding-left: 1em;
   text-indent: -0.7em;
 }
+.list-type-circle-assurances {
+  padding-left: 1em;
+  text-indent: -0.7em;
+}
 
 .list-type-circle::before {
   content: "•";
   padding-right: 8px;
-  color: var(--white); /* or whatever color you prefer */
+  color: var(--white);
+}
+
+.list-type-circle-assurances::before {
+  content: "•";
+  padding-right: 8px;
+  color: var(--greyFont);
 }
 
 .max-width-1600 {
-	max-width: 1600px;
-	margin: auto;
+  max-width: 1600px;
+  margin: auto;
 }
 /*style de la page*/
 
@@ -269,7 +279,6 @@ nav .nav-item a {
 }
 
 /*presentation-part*/
-
 
 #photoProfilConseiller {
   width: 66px;
