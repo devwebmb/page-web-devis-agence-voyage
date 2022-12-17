@@ -1,55 +1,136 @@
 /*reset css*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-    box-sizing: border-box;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
 }
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /*colors*/
 
 /*golden Brown : #b88434
 raw sienna : #d38b5d
-Lemon Yellow Crayola : #f3ffb6
-Russian Green : #739e82
-Hunter Green : #2c5530
+timberwolf : #eadeda 
+Rhythm : #777da7
+Bistre : #392a16
 white :  #fffffa
 black : #08090a 
 grey font : #817d7a*/
@@ -59,134 +140,146 @@ grey font : #817d7a*/
 /*colors*/
 
 :root {
-    --color1 : #b88434;
-    --color2 : #d38b5b;
-    --color3 : #f3ffb6;
-    --color4 : #739e82;
-    --color5 : #2c5530;
-    --white : #fffffa;
-    --black : #08090a;
-	--greyFont: #817d7a;
+  --color1: #b88434;
+  --color2: #d38b5b;
+  --color3: #eadeda;
+  --color4: #777da7;
+  --color5: #392a16;
+  --white: #fffffa;
+  --black: #08090a;
+  --greyFont: #817d7a;
 }
 
 .white {
-	color: var(--white);
+  color: var(--white);
 }
 
 .black {
-color: var(--black);
+  color: var(--black);
 }
 
 .grey-font {
-	color: var(--greyFont);
+  color: var(--greyFont);
 }
 
 .color1 {
-	color: var(--color1);
+  color: var(--color1);
+}
+
+.color2 {
+  color: var(--color2);
 }
 
 .background1 {
-	background: var(--color1);
+  background: var(--color1);
 }
 .background2 {
-	background: var(--color2);
+  background: var(--color2);
 }
 .background3 {
-	background: var(--color3);
+  background: var(--color3);
 }
 .background4 {
-	background: var(--color4);
+  background: var(--color4);
 }
 .background5 {
-	background: var(--color5);
+  background: var(--color5);
+}
+
+.background-white {
+	background: var(--white);
 }
 
 .border-white {
-	border-color: white;
+  border-color: white;
 }
 
 .border-color1 {
-	border-color: var(--color1) !important;
+  border-color: var(--color1) !important;
 }
 
 /*shadows*/
 .color1-shadow {
-	box-shadow:0 .125rem .75rem var(--color1);
+  box-shadow: 0 0.125rem 0.75rem var(--color1);
 }
 
 /*hr*/
 
 hr:not([size]) {
-	height: 2px;
-	opacity: 0.75;
+  height: 2px;
+  opacity: 0.75;
 }
 
 /*global*/
 .cover {
-	object-fit: cover;
+  object-fit: cover;
+}
+
+.list-type-circle {
+  padding-left: 1em;
+  text-indent: -0.7em;
+}
+
+.list-type-circle::before {
+  content: "•";
+  padding-right: 8px;
+  color: var(--white); /* or whatever color you prefer */
+}
+
+.max-width-1600 {
+	max-width: 1600px;
+	margin: auto;
 }
 /*style de la page*/
 
 /*header*/
 header {
-    background-image: url("./assets/images/ancienne-eglise-paroissiale-de-sant-appiano_zoom.jpg");
-	height: 50vh;
-	width: 100%;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
+  background-image: url("./assets/images/ancienne-eglise-paroissiale-de-sant-appiano_zoom.jpg");
+  height: 50vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #titreSejour {
-	top: 60%;
-	left: 50%;
-	transform: translateX(-50%);
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /*navbar*/
-@media screen and (min-width:992px) {
-	#navbarNavDropdown {
-		display: flex;
-		justify-content: center;
-	}
+@media screen and (min-width: 992px) {
+  #navbarNavDropdown {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 nav .nav-item a {
-	color: var(--white) !important;
+  color: var(--white) !important;
 }
 
 .navbar-light .navbar-toggler {
-	border-color: var(--white);
+  border-color: var(--white);
 }
 
 #navTitre {
-	height: 100px;
+  height: 100px;
 }
 
 /*presentation-part*/
 
-.presentation-part {
-	max-width: 1600px;
-	margin: auto;
-}
-#photoProfilConseiller {
-	width: 66px;
-	height: 66px;
-	background: white;
-	border: solid 1px var(--color1);
-}
 
-.parallax {
-	height: 1500px;
+#photoProfilConseiller {
+  width: 66px;
+  height: 66px;
+  background: white;
+  border: solid 1px var(--color1);
 }
 
 /*programme part*/
 
-.programme-part {
-	max-width: 1600px;
-	margin: auto;
-}
-
 .carousel {
-	height: 330px;
+  height: 330px;
 }
