@@ -326,7 +326,7 @@
     </div>
 
     <!--CGV-->
-    <div class="mt-5 shadow max-width-1600" id="cgv">
+    <!-- <div class="mt-5 shadow max-width-1600" id="cgv">
         <div class="col-10 mx-auto py-5 grey-font">
             <p class="fw-bold mb-3 black"><span class="fs-5">Conditions générales de vente</span> <br>
                 Mise a jour du 1er avril 2020</p>
@@ -1073,33 +1073,46 @@
             </p>
         </div>
 
-    </div>
+    </div> -->
 
     <!--formulaire-->
-    <div class="my-5 shadow maw-width-1600 py-5">
+    <div class="my-5 shadow max-width-1600 py-5">
         <div class="col-10 mx-auto p-5 border border-2">
-            <p class="fs-2 text-center mb-4">Pour valider le devis ou demander des modifications, merci de remplir le
+            <p class="fs-2 text-center mb-4 col-10 mx-auto">Pour valider le devis ou demander des modifications, merci de remplir le
                 formulaire ci-dessous.</p>
             <hr class="col-6 mx-auto">
-            <form action="" class="col-10 mx-auto">
-                <div class="form-check d-flex align-items-center">
-                    <input class="me-2" type="radio" name="flexRadioDefault"
-                        id="flexRadioDefault1"><label class="form-check-label " for="flexRadioDefault1">
-                        J'accepte le devis
-                    </label>
+            <form action="" class="col-10 mx-auto mt-4">
+                <div class="form-check d-flex align-items-center ps-0">
+                    <input class="me-2 radio-check d-none" type="radio" name="flexRadioDefault" id="acceptDevis">
+                    <label class="form-label-design position-relative me-2 " for="acceptDevis">
+                        <div class="position-absolute top-50 start-50 translate-middle "></div>
+                    </label>J'accepte le devis
                 </div>
-                <div class="form-check d-flex align-items-center">
-                    <input class=" me-2" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        J'ai lu et j'accepte les conditions générales de vente
-                    </label>
+                <div class="form-check d-flex align-items-center ps-0">
+                    <input class=" me-2 d-none radio-check" type="checkbox" value="" id="acceptCgv">
+                    <label class="form-label-design position-relative me-2" for="acceptCgv">
+                        <div class="position-absolute top-50 start-50 translate-middle "></div>
+                    </label>J'ai lu et j'accepte les conditions générales de vente
                 </div>
-                <div class="form-check d-flex align-items-center">
-                    <input class=" me-2" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                    <label class="form-check-label" for="flexRadioDefault2">
-                        Je demande des modifications
+                <div class="form-check d-flex align-items-center ps-0 mb-3">
+                    <input class="radio-check me-2 d-none" type="radio" name="flexRadioDefault" id="modifications">
+                    <label class="form-label-design position-relative me-2" for="modification">
+                        <div class="position-absolute top-50 start-50 translate-middle "></div>
                     </label>
+                    Je demande des modifications
                 </div>
+                <div class="mb-3">
+                    <label for="validationTextarea" class="form-label">Label du textarea</label>
+                    <textarea class="form-control " id="validationTextarea"
+                        placeholder="Entrez votre message"></textarea>
+                </div>
+                <div class="form-check d-flex align-items-center ps-0 mb-3">
+                    <input class=" me-2 radio-check d-none" type="checkbox" value="" id="acceptrgpd">
+                    <label class="form-label-design position-relative me-2 " for="acceptrgpd">
+                        <div class="position-absolute top-50 start-50 translate-middle "></div>
+                    </label>RGPD - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eligendi, magnam odit architecto harum repellendus!
+                </div>
+                <button type="submit" class="button px-3 py-1 rounded">Envoyer</button>
             </form>
         </div>
     </div>

@@ -240,6 +240,36 @@ hr:not([size]) {
   max-width: 1600px;
   margin: auto;
 }
+
+.button {
+  background: var(--color1);
+  border: none;
+  color: var(--white);
+}
+
+.form-label-design {
+  border: solid 1px var(--greyFont);
+  width: 14px;
+  height: 14px;
+  min-width: 14px;
+  border-radius: 40px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.form-label-design > div {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border-radius: 40px;
+  transition: all 0.3s ease;
+}
+
+.radio-check:checked + .form-label-design > div {
+  background: var(--greyFont);
+  transition: all 0.3s ease;
+}
 /*style de la page*/
 
 /*header*/
