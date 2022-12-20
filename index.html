@@ -15,7 +15,7 @@
 
 <body>
     <!--navbar en version tablette et mobile-->
-    <div class="d-flex justify-content-between d-xl-block background1 sticky-top">
+    <header class="d-flex justify-content-between d-xl-block background1 sticky-top">
         <nav class="navbar navbar-expand-xl navbar-light ">
             <div class="container-fluid px-0 ">
                 <div class="d-flex justify-content-center ps-5 ps-xl-0 my-2">
@@ -27,32 +27,32 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav fs-5">
-                        <li class="nav-item ps-5 ps-xl-0">
-                            <a class="nav-link " aria-current="page" href="#">Présentation</a>
+                        <li class="nav-item ps-5 px-xl-2 border-right">
+                            <a class="nav-link" aria-current="page" href="#">Présentation</a>
                         </li>
                         <hr class="col-2 ms-5 my-2 white d-xl-none">
-                        <li class="nav-item ps-5 ps-xl-0">
+                        <li class="nav-item ps-5 px-xl-2 border-right">
                             <a class="nav-link" href="#programmePart">Programme Détaillé</a>
                         </li>
                         <hr class="col-2 ms-5 my-2 white d-xl-none">
-                        <li class="nav-item ps-5 ps-xl-0">
+                        <li class="nav-item ps-5 px-xl-2 border-right">
                             <a class="nav-link" href="#informationsPratiques">Informations Pratiques</a>
                         </li>
                         <hr class="col-2 ms-5 my-2 white d-xl-none">
 
-                        <li class="nav-item ps-5 ps-xl-0">
+                        <li class="nav-item ps-5 px-xl-2 border-right">
                             <a class="nav-link" href="#propositionTarifaire">Proposition Tarifaire</a>
                         </li>
                         <hr class="col-2 ms-5 my-2 white d-xl-none">
-                        <li class="nav-item ps-5 ps-xl-0">
+                        <li class="nav-item ps-5 px-xl-2 border-right">
                             <a class="nav-link" href="#assurances">Assurances</a>
                         </li>
                         <hr class="col-2 ms-5 my-2 white d-xl-none">
-                        <li class="nav-item ps-5 ps-xl-0">
+                        <li class="nav-item ps-5 px-xl-2 border-right">
                             <a class="nav-link" href="#cgv">CGV</a>
                         </li>
                         <hr class="col-2 ms-5 my-2 white d-xl-none">
-                        <li class="nav-item ps-5 ps-xl-0">
+                        <li class="nav-item ps-5 px-xl-2">
                             <a class="nav-link" href="#cgv">Confirmation Devis</a>
                         </li>
 
@@ -72,40 +72,48 @@
             </div>
         </nav>
         <div class="fs-1 white d-flex align-items-center pe-5 d-xl-none" id="navTitre">Titre du séjour</div>
-    </div>
-
-    <!--entête, introduction-->
-    <header>
-        <div class="position-relative h-100">
-            <!--photos, logo, titre, date, contact, tèl-->
-            <div class="d-flex justify-content-between pt-5 col-10 mx-auto">
-                <div class="logo d-flex justify-content-center align-items-center">
-                    <img src="./assets/images/a-la-carte-corsica-logo.png" alt="Logo de l'entreprise">
-                </div>
-                <div class="d-flex col-lg-5 col-7  justify-content-between">
-                    <div class="white d-flex align-items-center background1 px-3 rounded-pill"><img
-                            src="./assets/icones/envelopeblanc.svg" alt="Icone Email"><span
-                            class="ps-2">contact@email.com</span></div>
-                    <div class="white d-flex align-items-center background1 px-3 rounded-pill"><img
-                            src="./assets/icones/telephoneblanc.svg" alt="Icone d'un téléphone"><span class="ps-2">00 00
-                            00
-                            00 00</span> </div>
-                </div>
-            </div>
-            <div id="titreSejour" class="position-absolute white lh-sm  background1 px-5 py-1 rounded-pill text-center">
-                <span class="fs-1">Titre du sejour</span><br>
-                <span class="fs-3">Du 15 au 20 décembre 2022</span>
-            </div>
-        </div>
     </header>
 
+    <!--image introduction-->
+    <div id="headImage">
+        <div class="position-relative h-100">
+            <!--photos, logo, titre, date, contact, tèl-->
+            <div class="d-md-flex  justify-content-md-between py-5  col-10 mx-auto ">
+                <div class="d-flex justify-content-center">
+                    <div
+                        class="logo  d-inline-block d-md-flex justify-content-md-center align-items-md-center background-white px-3 py-1 rounded-pill">
+                        <img src="./assets/images/a-la-carte-corsica-logo.png" alt="Logo de l'entreprise">
+                    </div>
+                </div>
+                <br class="d-md-none">
+                <div class="d-flex justify-content-center ">
+                    <div
+                        class="white d-inline-block d-md-flex align-items-md-center justify-content-md-center background1 px-3 py-2 py-md-0  rounded-pill mt-3 mt-md-0 h-100">
+                        <img src="./assets/icones/telephoneblanc.svg" alt="Icone d'un téléphone">
+                        <span class="ps-2">00 00
+                            00
+                            00 00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center " id="titreSejour">
+                <div class="white lh-sm background1 px-5 py-1 rounded-pill  text-center">
+                    <span class="fs-1 ">Titre du sejour</span><br>
+                    <span class="fs-3 ">Du 15 au 20 décembre 2022</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--Agent de réservation, présentation-->
-    <section class="shadow presentation-part mt-5 max-width-1600">
-        <p id="client" class="text-center  py-5 fs-2 color1">Devis <span>123456789</span> : <span>Mr MARTIN ERIC</span>
+    <section class="shadow presentation-part mt-5 max-width-1200 nunito-regular">
+        <p id="client" class="text-center  py-5 pb-4 fs-2 color1 fw-bold lh-base">DEVIS <span>123456789</span> : <br
+                class="d-md-none"><span class="mt-3">Mr MARTIN
+                ERIC</span>
         </p>
         <hr class="col-6 mx-auto color1">
-        <div class="d-flex">
-            <div class="col-4  d-flex align-items-center justify-content-center">
+        <div class="d-flex flex-column flex-md-row">
+            <div class="col-md-4  d-flex align-items-center justify-content-center pt-4 pt-md-0">
                 <div class="m-3 color1-shadow rounded p-3">
                     <p class="color1 lh-sm text-center mb-3 fs-5"><span class="fw-bold">Eric martin, </span><br>
                         Votre conseiller voyage</p>
@@ -128,9 +136,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-8 my-3">
+            <div class="col-md-8 my-3 ">
                 <div class="m-3 p-3">
-                    <h2 class="fs-2 color1 text-center mb-3"><strong>Présentation du séjour</strong> </h2>
+                    <h2 class="fs-2 color1 text-center mb-4 mb-md-3 fw-bold">Présentation du séjour </h2>
                     <p class="grey-font lh-base ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam
                         molestias
                         perspiciatis atque aliquid repellendus sed, eveniet exercitationem,<br> Blanditiis est enim
@@ -149,7 +157,7 @@
 
     <!--section programme par jour-->
 
-    <div class="shadow d-flex flex-wrap mt-5 py-5 max-width-1600" id="programmePart">
+    <section class="shadow d-flex flex-wrap mt-5 py-5 max-width-1200 nunito-regular " id="programmePart">
         <div class="">
             <div class="d-flex flex-column background1 white justify-content-center py-3 rounded col-9 mx-auto">
                 <div class="d-flex justify-content-center mb-3">
@@ -215,12 +223,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!--section informations pratiques-->
 
-    <div class=" shadow mt-5 py-5 max-width-1600" id="informationsPratiques">
-        <p class="text-center color1 fs-1 fw-bold">INFORMATIONS PRATIQUES</p>
+    <section class=" shadow mt-5 py-5 max-width-1200 nunito-regular" id="informationsPratiques">
+        <p class="text-center color1 fs-1 fw-bold col-10 mx-auto">INFORMATIONS PRATIQUES</p>
         <hr class="color1 col-3 mx-auto mt-3">
         <div class="col-10 mt-5 mx-auto">
             <div class="mb-3">
@@ -262,18 +270,19 @@
                     La gare TGV située en centre ville est également une solution.</p>
             </div>
         </div>
-    </div>
+    </section>
 
     <!--Proposition tarifaire-->
 
-    <div class=" background2 p-5 mt-5 shadow max-width-1600" id="propositionTarifaire">
+    <section class=" background2 p-md-5  mt-5 shadow max-width-1200 nunito-regular" id="propositionTarifaire">
         <div class="border border-2  border-white rounded background3">
-            <div class="border border-2 m-1 py-5 rounded border-white background2">
+            <div class="border border-2 m-md-1 py-5 rounded border-white background2">
                 <p class="text-center white fs-1 fw-bold">PROPOSITION TARIFAIRE</p>
                 <hr class="white col-3 mx-auto mt-3">
-                <p class="text-center white fs-1 fw-bold">PRIX PAR PERSONNE : <span>1111</span>&nbsp;€</p>
+                <p class="text-center white fs-1 fw-bold lh-base">PRIX PAR PERSONNE : <br
+                        class="d-md-none"><span>1111</span>&nbsp;€</p>
                 <div class="col-10 mx-auto mt-5 white">
-                    <p class="mb-2 fs-4">Options :</p>
+                    <p class="mb-2 fs-4 mb-3 mb-md-2">Options :</p>
                     <ul class="fs-4 lh-sm">
                         <li class="list-type-circle ">Départ en juillet et août : 50€</li>
                         <li class="list-type-circle ">Supplément chambre single : 470€</li>
@@ -284,10 +293,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!--assurances-->
-    <div class=" mt-5 shadow max-width-1600" id="assurances">
+    <section class=" mt-5 shadow max-width-1200 nunito-regular " id="assurances">
         <div class="col-10 mx-auto py-5 grey-font">
             <p class="fw-bold fs-5 mb-3 black">Assurances : Voyages en toute sérénité !</p>
             <p class="mb-2">Vous allez partir pour un beau voyage, il serait dommage de ne pas se protéger contre les
@@ -330,14 +339,16 @@
                 dans
                 ce cas, merci de nous contacter pour étudier d'autres solutions d'assurance.</p>
         </div>
-    </div>
+    </section>
 
     <!--CGV-->
-    <div class="mt-5 shadow max-width-1600" id="cgv">
+    <section class="mt-5 shadow max-width-1200 nunito-regular" id="cgv">
         <div class="col-10 mx-auto py-5 grey-font ">
             <p class="fw-bold mb-3 black"><span class="fs-5">Conditions générales de vente</span> <br>
                 Mise a jour du 1er avril 2020</p>
-            <p class="black  text-decoration-underline cursor-pointer mb-3" id="displayCgv"><span id="afficher">Afficher</span> <span id="cacher" class="d-none">Cacher</span> les conditions générales
+            <p class="black  text-decoration-underline cursor-pointer mb-3" id="displayCgv"><span
+                    id="afficher">Afficher</span> <span id="cacher" class="d-none">Cacher</span> les conditions
+                générales
                 de vente</p>
             <div class="d-none" id="cgvView">
                 <p class="mb-2">
@@ -1202,33 +1213,34 @@
             </div>
         </div>
 
-    </div>
+    </section>
 
     <!--formulaire-->
-    <div class="my-5 shadow max-width-1600 py-5">
-        <div class="col-10 mx-auto p-5 border border-2 rounded">
-            <p class="fs-2 text-center mb-4 col-10 mx-auto">Pour valider le devis ou demander des modifications, merci
+    <section class="my-5 shadow max-width-1200 nunito-regular py-5" id="formulaire">
+        <div class="col-md-10 mx-auto p-md-5 border border-2 border-color1 rounded">
+            <p class="fs-2 text-center mb-4 col-md-10 col-11 mx-auto color1">Pour valider le devis ou demander des
+                modifications,
+                merci
                 de remplir le
                 formulaire ci-dessous.</p>
-            <hr class="col-6 mx-auto">
+            <hr class="col-6 mx-auto color1">
 
             <form action="" class="col-10 mx-auto mt-4">
                 <div class="form-check d-flex align-items-center ">
-                    <input class="form-check-input me-2 " type="radio" name="flexRadioDefault" id="acceptDevis">
-                    <label class="form-check-label pt-1 " for="acceptDevis">
+                    <input class="form-check-input  " type="radio" name="flexRadioDefault" id="acceptDevis">
+                    <label class="form-check-label pt-1 ms-2" for="acceptDevis">
                         J'accepte le devis
                     </label>
                 </div>
                 <div class="form-check d-flex align-items-center d-none" id="acceptCgvContainer">
-                    <input class="form-check-input me-2" type="checkbox" value="" id="acceptCgv">
-                    <label class="form-check-label pt-1" for="acceptCgv">
-                        J'ai lu et j'accepte les conditions générales de vente
+                    <input class="form-check-input " type="checkbox" value="" id="acceptCgv">
+                    <label class="form-check-label pt-1 ms-2" for="acceptCgv">
+                        J'ai lu et j'accepte <br class="d-sm-none"> les conditions générales de vente
                     </label>
                 </div>
                 <div class="form-check d-flex align-items-center mb-3">
-                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault" id="modifications"
-                       >
-                    <label class="form-check-label pt-1" for="modifications">
+                    <input class="form-check-input " type="radio" name="flexRadioDefault" id="modifications">
+                    <label class="form-check-label pt-1 ms-2" for="modifications">
                         Je demande des modifications
                     </label>
                 </div>
@@ -1238,16 +1250,20 @@
                         placeholder="Entrez votre message"></textarea>
                 </div>
                 <div class="form-check d-flex align-items-center mb-3">
-                    <input class="form-check-input me-2" type="checkbox" value="" id="acceptRgpd">
-                    <label class="form-check-label pt-1 " for="acceptRgpd">RGPD - Lorem ipsum dolor
-                        sit amet, consectetur adipisicing elit. Dolor eligendi, magnam odit
+                    <input class="form-check-input " type="checkbox" value="" id="acceptRgpd">
+                    <label class="form-check-label pt-1 ms-2" for="acceptRgpd">RGPD - Lorem ipsum dolor
+                        sit amet, <br class="d-sm-none"> consectetur adipisicing elit. <br> Dolor eligendi, magnam odit
+                        <br class="d-sm-none">
                         architecto harum repellendus!
                     </label>
                 </div>
-                <button type="submit" class="button px-3 py-1 rounded">Envoyer</button>
+                <div class="d-flex justify-content-center justify-content-md-start mt-4 mt-md-0">
+                    <button type="submit" class="button px-3 py-1 rounded">Envoyer</button>
+                </div>
             </form>
         </div>
-    </div>
+    </section>
+
     <!--Script bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
@@ -1256,7 +1272,7 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
     <!--script-->
-    <script src="./index.js"></script>
+    <script src="./index.js" defer></script>
 </body>
 
 </html>

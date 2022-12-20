@@ -26,8 +26,38 @@ displayCgv.addEventListener("click", () => {
     afficher.classList.add("d-none");
     cacher.classList.remove("d-none");
   } else if (!cgvView.classList.contains("d-none")) {
-      cgvView.classList.add("d-none");
-        afficher.classList.remove("d-none");
-        cacher.classList.add("d-none");
+    cgvView.classList.add("d-none");
+    afficher.classList.remove("d-none");
+    cacher.classList.add("d-none");
   }
 });
+
+/*effet au scroll*/
+
+/*création observer sur section pour affichage au scroll*/
+let observer = new IntersectionObserver(
+  (observables) => {
+    for (let observable of observables) {
+      if (observable.intersectionRatio > 0.3) {
+        observable.target.classList.remove("invisible");
+      }
+      //faire redisparaitre les sections
+      // else {
+      //   observable.target.classList.add("invisible");
+      // }
+    }
+  },
+  {
+    threshold: [ 0.5],
+  }
+);
+
+const sections = document.querySelectorAll("section");
+
+for (let section of sections) {
+  if (window.innerWidth > 1200) {
+    section.classList.add("invisible");
+    observer.observe(section);
+  }
+}
+
