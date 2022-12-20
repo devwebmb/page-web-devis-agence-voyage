@@ -48,7 +48,7 @@ let observer = new IntersectionObserver(
     }
   },
   {
-    threshold: [ 0.5],
+    threshold: [0.5],
   }
 );
 
@@ -61,3 +61,22 @@ for (let section of sections) {
   }
 }
 
+/*Comportement à l'impression*/
+
+window.onbeforeprint = () => {
+  for (let section of sections) {
+    section.classList.remove("invisible");
+  }
+  if (cgvView.classList.contains("d-none")) {
+    cgvView.classList.remove("d-none");
+  }
+};
+
+window.onafterprint = () => {
+  for (let section of sections) {
+    section.classList.add("invisible");
+  }
+  if (!cgvView.classList.contains("d-none")) {
+    cgvView.classList.add("d-none");
+  }
+};

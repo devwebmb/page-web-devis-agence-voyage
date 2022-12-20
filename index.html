@@ -10,12 +10,13 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--style-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="print.css" media="print">
     <title>Page devis agence web</title>
 </head>
 
 <body>
     <!--navbar en version tablette et mobile-->
-    <header class="d-flex justify-content-between d-xl-block background1 sticky-top">
+    <header class="d-flex d-print-none justify-content-between d-xl-block background1 sticky-top ">
         <nav class="navbar navbar-expand-xl navbar-light ">
             <div class="container-fluid px-0 ">
                 <div class="d-flex justify-content-center ps-5 ps-xl-0 my-2">
@@ -55,18 +56,6 @@
                         <li class="nav-item ps-5 px-xl-2">
                             <a class="nav-link" href="#cgv">Confirmation Devis</a>
                         </li>
-
-                        <!-- <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            Dropdown link
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </li> -->
                     </ul>
                 </div>
             </div>
@@ -75,7 +64,7 @@
     </header>
 
     <!--image introduction-->
-    <div id="headImage">
+    <div id="headImage" class="d-print-none">
         <div class="position-relative h-100">
             <!--photos, logo, titre, date, contact, tèl-->
             <div class="d-md-flex  justify-content-md-between py-5  col-10 mx-auto ">
@@ -106,7 +95,9 @@
     </div>
 
     <!--Agent de réservation, présentation-->
-    <section class="shadow presentation-part mt-5 max-width-1200 nunito-regular">
+    <section class="shadow mt-0  mt-md-5 max-width-1200 nunito-regular" id="presentation-part">
+        <p class="text-center  py-5 pb-4 fs-2  fw-bold d-none d-print-block">TITRE DU SEJOUR</p>
+        <p class="text-center fs-2 d-none d-print-block">Date du <span>20 décembre au 25 décembre 2023</span></p>
         <p id="client" class="text-center  py-5 pb-4 fs-2 color1 fw-bold lh-base">DEVIS <span>123456789</span> : <br
                 class="d-md-none"><span class="mt-3">Mr MARTIN
                 ERIC</span>
@@ -157,7 +148,7 @@
 
     <!--section programme par jour-->
 
-    <section class="shadow d-flex flex-wrap mt-5 py-5 max-width-1200 nunito-regular " id="programmePart">
+    <section class="shadow d-flex flex-wrap mt-0  mt-md-5 py-5 max-width-1200 nunito-regular " id="programmePart">
         <div class="">
             <div class="d-flex flex-column background1 white justify-content-center py-3 rounded col-9 mx-auto">
                 <div class="d-flex justify-content-center mb-3">
@@ -227,7 +218,7 @@
 
     <!--section informations pratiques-->
 
-    <section class=" shadow mt-5 py-5 max-width-1200 nunito-regular" id="informationsPratiques">
+    <section class=" shadow mt-0  mt-md-5 py-5 max-width-1200 nunito-regular" id="informationsPratiques">
         <p class="text-center color1 fs-1 fw-bold col-10 mx-auto">INFORMATIONS PRATIQUES</p>
         <hr class="color1 col-3 mx-auto mt-3">
         <div class="col-10 mt-5 mx-auto">
@@ -274,20 +265,22 @@
 
     <!--Proposition tarifaire-->
 
-    <section class=" background2 p-md-5  mt-5 shadow max-width-1200 nunito-regular" id="propositionTarifaire">
+    <section class=" background2 p-md-5  mt-0  mt-md-5 shadow max-width-1200 nunito-regular " id="propositionTarifaire">
         <div class="border border-2  border-white rounded background3">
-            <div class="border border-2 m-md-1 py-5 rounded border-white background2">
-                <p class="text-center white fs-1 fw-bold">PROPOSITION TARIFAIRE</p>
+            <div class="border border-2 m-md-1 py-5 rounded border-white background2 ">
+                <p class="text-center white fs-1 fw-bold print-black">PROPOSITION TARIFAIRE</p>
                 <hr class="white col-3 mx-auto mt-3">
-                <p class="text-center white fs-1 fw-bold lh-base">PRIX PAR PERSONNE : <br
-                        class="d-md-none"><span>1111</span>&nbsp;€</p>
+                <p class="text-center white fs-1 fw-bold lh-base print-black">PRIX PAR PERSONNE : <br
+                        class="d-md-none d-print-none"><span>1111</span>&nbsp;€</p>
                 <div class="col-10 mx-auto mt-5 white">
-                    <p class="mb-2 fs-4 mb-3 mb-md-2">Options :</p>
+                    <p class="mb-2 fs-4 mb-3 mb-md-2 print-black">Options :</p>
                     <ul class="fs-4 lh-sm">
-                        <li class="list-type-circle ">Départ en juillet et août : 50€</li>
-                        <li class="list-type-circle ">Supplément chambre single : 470€</li>
-                        <li class="list-type-circle ">Location de vélo (VTC) incluant le rapatriement de fin : 230€</li>
-                        <li class="list-type-circle ">Location vélo électrique incluant le rapatriement de fin : 310€
+                        <li class="list-type-circle print-black">Départ en juillet et août : 50€</li>
+                        <li class="list-type-circle print-black">Supplément chambre single : 470€</li>
+                        <li class="list-type-circle print-black">Location de vélo (VTC) incluant le rapatriement de fin
+                            : 230€</li>
+                        <li class="list-type-circle print-black">Location vélo électrique incluant le rapatriement de
+                            fin : 310€
                         </li>
                     </ul>
                 </div>
@@ -296,7 +289,7 @@
     </section>
 
     <!--assurances-->
-    <section class=" mt-5 shadow max-width-1200 nunito-regular " id="assurances">
+    <section class=" mt-0  mt-md-5 shadow max-width-1200 nunito-regular " id="assurances">
         <div class="col-10 mx-auto py-5 grey-font">
             <p class="fw-bold fs-5 mb-3 black">Assurances : Voyages en toute sérénité !</p>
             <p class="mb-2">Vous allez partir pour un beau voyage, il serait dommage de ne pas se protéger contre les
@@ -342,7 +335,7 @@
     </section>
 
     <!--CGV-->
-    <section class="mt-5 shadow max-width-1200 nunito-regular" id="cgv">
+    <section class="mt-0  mt-md-5 shadow max-width-1200 nunito-regular" id="cgv">
         <div class="col-10 mx-auto py-5 grey-font ">
             <p class="fw-bold mb-3 black"><span class="fs-5">Conditions générales de vente</span> <br>
                 Mise a jour du 1er avril 2020</p>
@@ -1216,7 +1209,7 @@
     </section>
 
     <!--formulaire-->
-    <section class="my-5 shadow max-width-1200 nunito-regular py-5" id="formulaire">
+    <section class="my-0 my-md-5 shadow max-width-1200 nunito-regular py-5 d-print-none" id="formulaire">
         <div class="col-md-10 mx-auto p-md-5 border border-2 border-color1 rounded">
             <p class="fs-2 text-center mb-4 col-md-10 col-11 mx-auto color1">Pour valider le devis ou demander des
                 modifications,

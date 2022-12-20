@@ -1,0 +1,40 @@
+/*presentation part*/
+#presentation-part {
+  box-shadow: none !important;
+  page-break-after: always;
+}
+
+/*programme détaillé*/
+#programmePart {
+  box-shadow: none !important;
+  page-break-after: always;
+}
+
+/*informations pratiques*/
+#informationsPratiques {
+  box-shadow: none !important;
+  page-break-after: always;
+}
+
+/*Proposition tarifaire*/
+#propositionTarifaire {
+  box-shadow: none !important;
+  page-break-after: always;
+}
+
+.print-black {
+  color: black;
+}
+
+/*assurances*/
+#assurances {
+  box-shadow: none !important;
+  page-break-after: always;
+}
+
+/*cgv*/
+#cgv {
+  box-shadow: none !important;
+  page-break-after: always;
+  font-size: 10px;
+}
