@@ -205,8 +205,17 @@ grey font : #817d7a*/
   src: url("/assets/fonts/nunito/static/Nunito-Regular.ttf");
 }
 
+@font-face {
+  font-family: "lora-regular";
+  src: url("/assets/fonts/lora/static/Lora-Regular.ttf");
+}
+
 .nunito-regular {
   font-family: "nunito-regular";
+}
+
+.lora-regular {
+  font-family: "lora-regular";
 }
 /*shadows*/
 .color1-shadow {
@@ -381,7 +390,7 @@ nav .nav-item a {
 
 .invisible {
   opacity: 0;
-  transform: translateX(200px);
+  transform: translateY(200px);
 }
 
 section {
