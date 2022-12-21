@@ -176,6 +176,9 @@ grey font : #817d7a*/
 .background2 {
   background: var(--color2);
 }
+.background2-05 {
+  background: rgb(211, 139, 91, 0.9);
+}
 .background3 {
   background: var(--color3);
 }
@@ -198,6 +201,23 @@ grey font : #817d7a*/
   border-color: var(--color1) !important;
 }
 
+.gradient-radial-color1-color3 {
+  background: rgb(184, 132, 52);
+  background: radial-gradient(
+    circle,
+    rgba(184, 132, 52, 1) 0%,
+    rgba(234, 222, 218, 1) 100%
+  );
+}
+
+.gradient-linear-color1 {
+  background: rgb(234, 222, 173);
+  background: linear-gradient(
+    90deg,
+    rgba(184, 132, 52, 0.85) 0%,
+    rgba(184, 132, 52, 1) 100%
+  );
+}
 /*fonts*/
 
 @font-face {
@@ -220,6 +240,9 @@ grey font : #817d7a*/
 /*shadows*/
 .color1-shadow {
   box-shadow: 0 0.125rem 0.75rem var(--color1);
+}
+.color2-shadow {
+  box-shadow: 0 0.125rem 0.75rem var(--color2);
 }
 
 /*hr*/
@@ -308,7 +331,7 @@ hr:not([size]) {
 
 /*gestion décallage ancre menu sticky*/
 html {
-  scroll-padding-top: 4rem;
+  scroll-padding-top: 6rem;
 }
 
 /*style de la page*/
@@ -349,7 +372,7 @@ nav .nav-item a {
   width: 66px;
   height: 66px;
   background: white;
-  border: solid 1px var(--color1);
+  border: solid 1px var(--color2);
 }
 
 @media screen and (min-width: 768px) {
@@ -397,5 +420,3 @@ section {
   opacity: 1;
   transition: transform 1s, opacity 1s;
 }
-
-

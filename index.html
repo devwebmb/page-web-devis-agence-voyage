@@ -14,54 +14,57 @@
     <title>Page devis agence web</title>
 </head>
 
-<body>
+<body class="gradient-radial-color1-color3">
     <!--navbar en version tablette et mobile-->
-    <header class="d-flex d-print-none justify-content-between d-xl-block background1 sticky-top ">
-        <nav class="navbar navbar-expand-xl navbar-light lora-regular">
-            <div class="container-fluid px-0 ">
-                <div class="d-flex justify-content-center ps-5 ps-xl-0 my-2">
-                    <div class="border-white border border-2 rounded navbar-toggler p-1" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <img src="./assets/icones/list.svg" alt="Icone hamburger">
+    <div class="background-white sticky-top">
+
+        <header class="d-flex d-print-none justify-content-between d-xl-block gradient-linear-color1  ">
+            <nav class="navbar navbar-expand-xl navbar-light lora-regular">
+                <div class="container-fluid px-0 ">
+                    <div class="d-flex justify-content-center ps-5 ps-xl-0 my-2">
+                        <div class="border-white border border-2 rounded navbar-toggler p-1" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <img src="./assets/icones/list.svg" alt="Icone hamburger">
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav  ">
+                            <li class="nav-item ps-5 px-xl-2 border-right">
+                                <a class="nav-link" aria-current="page" href="#">Présentation</a>
+                            </li>
+                            <hr class="col-2 ms-5 my-2 white d-xl-none">
+                            <li class="nav-item ps-5 px-xl-2 border-right">
+                                <a class="nav-link" href="#programmePart">Programme Détaillé</a>
+                            </li>
+                            <hr class="col-2 ms-5 my-2 white d-xl-none">
+                            <li class="nav-item ps-5 px-xl-2 border-right">
+                                <a class="nav-link" href="#informationsPratiques">Informations Pratiques</a>
+                            </li>
+                            <hr class="col-2 ms-5 my-2 white d-xl-none">
+
+                            <li class="nav-item ps-5 px-xl-2 border-right">
+                                <a class="nav-link" href="#propositionTarifaire">Proposition Tarifaire</a>
+                            </li>
+                            <hr class="col-2 ms-5 my-2 white d-xl-none">
+                            <li class="nav-item ps-5 px-xl-2 border-right">
+                                <a class="nav-link" href="#assurances">Assurances</a>
+                            </li>
+                            <hr class="col-2 ms-5 my-2 white d-xl-none">
+                            <li class="nav-item ps-5 px-xl-2 border-right">
+                                <a class="nav-link" href="#cgv">CGV</a>
+                            </li>
+                            <hr class="col-2 ms-5 my-2 white d-xl-none">
+                            <li class="nav-item ps-5 px-xl-2">
+                                <a class="nav-link" href="#cgv">Confirmation Devis</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav fs-5 ">
-                        <li class="nav-item ps-5 px-xl-2 border-right">
-                            <a class="nav-link" aria-current="page" href="#">Présentation</a>
-                        </li>
-                        <hr class="col-2 ms-5 my-2 white d-xl-none">
-                        <li class="nav-item ps-5 px-xl-2 border-right">
-                            <a class="nav-link" href="#programmePart">Programme Détaillé</a>
-                        </li>
-                        <hr class="col-2 ms-5 my-2 white d-xl-none">
-                        <li class="nav-item ps-5 px-xl-2 border-right">
-                            <a class="nav-link" href="#informationsPratiques">Informations Pratiques</a>
-                        </li>
-                        <hr class="col-2 ms-5 my-2 white d-xl-none">
-
-                        <li class="nav-item ps-5 px-xl-2 border-right">
-                            <a class="nav-link" href="#propositionTarifaire">Proposition Tarifaire</a>
-                        </li>
-                        <hr class="col-2 ms-5 my-2 white d-xl-none">
-                        <li class="nav-item ps-5 px-xl-2 border-right">
-                            <a class="nav-link" href="#assurances">Assurances</a>
-                        </li>
-                        <hr class="col-2 ms-5 my-2 white d-xl-none">
-                        <li class="nav-item ps-5 px-xl-2 border-right">
-                            <a class="nav-link" href="#cgv">CGV</a>
-                        </li>
-                        <hr class="col-2 ms-5 my-2 white d-xl-none">
-                        <li class="nav-item ps-5 px-xl-2">
-                            <a class="nav-link" href="#cgv">Confirmation Devis</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="fs-1 white d-flex align-items-center pe-5 d-xl-none" id="navTitre">Titre du séjour</div>
-    </header>
+            </nav>
+            <div class="fs-1 white d-flex align-items-center pe-5 d-xl-none" id="navTitre">Titre du séjour</div>
+        </header>
+    </div>
 
     <!--image introduction-->
     <div id="headImage" class="d-print-none">
@@ -76,17 +79,19 @@
                 </div>
                 <br class="d-md-none">
                 <div class="d-flex justify-content-center ">
-                    <div
-                        class="white d-inline-block d-md-flex align-items-md-center justify-content-md-center background1 px-3 py-2 py-md-0  rounded-pill mt-3 mt-md-0 h-100">
-                        <img src="./assets/icones/telephoneblanc.svg" alt="Icone d'un téléphone">
-                        <span class="ps-2 lora-regular">00 00
-                            00
-                            00 00</span>
+                    <div class="background-white rounded-pill">
+                        <div
+                            class="white d-inline-block d-md-flex align-items-md-center justify-content-md-center gradient-linear-color1 px-3 py-2 py-md-0  rounded-pill mt-3 mt-md-0 h-100">
+                            <img src="./assets/icones/telephoneblanc.svg" alt="Icone d'un téléphone">
+                            <span class="ps-2 lora-regular">00 00
+                                00
+                                00 00</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="d-flex justify-content-center " id="titreSejour">
-                <div class="white lh-sm background1 px-5 py-1 rounded-pill  text-center lora-regular">
+            <div class="d-flex justify-content-center background-white rounded-pill" id="titreSejour">
+                <div class="white lh-sm gradient-linear-color1 px-5 py-1 rounded-pill  text-center lora-regular">
                     <span class="fs-1 ">Titre du sejour</span><br>
                     <span class="fs-3 ">Du 15 au 20 décembre 2022</span>
                 </div>
@@ -95,18 +100,19 @@
     </div>
 
     <!--Agent de réservation, présentation-->
-    <section class="shadow mt-0  mt-md-5 max-width-1200 nunito-regular" id="presentation-part">
+    <section class="shadow mt-0  mt-md-5 max-width-1200 nunito-regular background-white" id="presentation-part">
         <p class="text-center  py-5 pb-4 fs-2  fw-bold d-none d-print-block lora-regular">TITRE DU SEJOUR</p>
-        <p class="text-center fs-2 d-none d-print-block lora-regular">Date du <span>20 décembre au 25 décembre 2023</span></p>
-        <p id="client" class="text-center  py-5 pb-4 fs-2 color1 fw-bold lh-base lora-regular">DEVIS <span>123456789</span> : <br
-                class="d-md-none"><span class="mt-3">Mr MARTIN
+        <p class="text-center fs-2 d-none d-print-block lora-regular">Date du <span>20 décembre au 25 décembre
+                2023</span></p>
+        <p id="client" class="text-center  py-5 pb-4 fs-2 color1 fw-bold lh-base lora-regular">DEVIS
+            <span>123456789</span> : <br class="d-md-none"><span class="mt-3">Mr MARTIN
                 ERIC</span>
         </p>
-        <hr class="col-6 mx-auto color1">
+        <hr class="col-4 mx-auto color1">
         <div class="d-flex flex-column flex-md-row">
             <div class="col-md-4  d-flex align-items-center justify-content-center pt-4 pt-md-0">
-                <div class="m-3 color1-shadow rounded p-3 lora-regular">
-                    <p class="color1 lh-sm text-center mb-3 fs-5 "><span class="fw-bold">Eric martin, </span><br>
+                <div class="m-3 color2-shadow rounded p-3 lora-regular">
+                    <p class="color1 lh-sm text-center mb-3 fs-5 color2"><span class="fw-bold ">Eric martin, </span><br>
                         Votre conseiller voyage</p>
                     <div class="d-flex justify-content-center mb-3">
                         <div id="photoProfilConseiller" class="rounded-pill d-flex ">
@@ -114,12 +120,12 @@
                         </div>
                     </div>
                     <div class="d-flex flex-column">
-                        <div class="d-flex color1 mb-2 justify-content-center">
+                        <div class="d-flex color1 mb-2 justify-content-center color2">
                             <div class="d-flex"><img src="./assets/icones/envelopemarron.svg"
                                     alt="Icone d'une enveloppe"></div>
                             <span class="ps-2">contact@gmail.com</span>
                         </div>
-                        <div class="d-flex color1 justify-content-center">
+                        <div class="d-flex color1 justify-content-center color2">
                             <div class="d-flex"><img src="./assets/icones/telephonemarron.svg"
                                     alt="Icone d'une enveloppe"></div>
                             <span class="ps-2">00 00 00 00 00</span>
@@ -129,7 +135,7 @@
             </div>
             <div class="col-md-8 my-3 ">
                 <div class="m-3 p-3">
-                    <h2 class="fs-2 color1 text-center mb-4 mb-md-3 fw-bold  lora-regular">Présentation du séjour </h2>
+                    <h2 class="fs-2 color2 text-center mb-4 mb-md-3 fw-bold  lora-regular ">Présentation du séjour </h2>
                     <p class="grey-font lh-base ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam
                         molestias
                         perspiciatis atque aliquid repellendus sed, eveniet exercitationem,<br> Blanditiis est enim
@@ -140,7 +146,7 @@
                         adipisicing elit. Sed unde ullam animi eveniet similique nobis, illum facere voluptate vero
                         quia
                         fugiat eligendi? Numquam deserunt dolore voluptate vel, totam repellendus eius!</p>
-                    <hr class="col-6 mx-auto color1 mt-4">
+                    <hr class="col-6 mx-auto color2 mt-4">
                 </div>
             </div>
         </div>
@@ -148,7 +154,8 @@
 
     <!--section programme par jour-->
 
-    <section class="shadow d-flex flex-wrap mt-0  mt-md-5 py-5 max-width-1200 nunito-regular " id="programmePart">
+    <section class="shadow d-flex flex-wrap mt-0  mt-md-5 py-5 max-width-1200 nunito-regular background-white"
+        id="programmePart">
         <div class="">
             <div class="d-flex flex-column background1 white justify-content-center py-3 rounded-pill col-9 mx-auto">
                 <div class="d-flex justify-content-center mb-3">
@@ -218,32 +225,33 @@
 
     <!--section informations pratiques-->
 
-    <section class=" shadow mt-0  mt-md-5 py-5 max-width-1200 nunito-regular" id="informationsPratiques">
-        <p class="text-center color1 fs-1 fw-bold col-10 mx-auto lora-regular">INFORMATIONS PRATIQUES</p>
-        <hr class="color1 col-3 mx-auto mt-3">
+    <section class=" shadow mt-0  mt-md-5 py-5 max-width-1200 nunito-regular background-white"
+        id="informationsPratiques">
+        <p class="text-center color1 fs-1 fw-bold col-10 mx-auto lora-regular pb-4">INFORMATIONS PRATIQUES</p>
+        <hr class="color1 col-4 mx-auto mt-3">
         <div class="col-10 mt-5 mx-auto">
             <div class="mb-3">
-                <p class="informations-title fs-5 fw-bold color1 mb-1 lora-regular">
+                <p class="informations-title fs-5 fw-bold color2 mb-1 lora-regular">
                     Début :
                 </p>
                 <p class="lh-sm informations-content grey-font">A votre hôtel à Toulouse.</p>
             </div>
             <div class="mb-3">
 
-                <p class="informations-title fs-5 fw-bold color1 mb-1 lora-regular">
+                <p class="informations-title fs-5 fw-bold color2 mb-1 lora-regular">
                     Fin :
                 </p>
                 <p class="lh-sm informations-content grey-font">Fin du séjour à Narbonne.</p>
 
             </div>
             <div class="mb-3">
-                <p class="informations-title fs-5 fw-bold color1 mb-1 lora-regular">
+                <p class="informations-title fs-5 fw-bold color2 mb-1 lora-regular">
                     Hébergement :
                 </p>
                 <p class="lh-sm informations-content grey-font">En hôtels 3 étoiles - chambre double.</p>
             </div>
             <div class="mb-3">
-                <p class="informations-title fs-5 fw-bold color1 mb-1 lora-regular">
+                <p class="informations-title fs-5 fw-bold color2 mb-1 lora-regular">
                     Portage :
                 </p>
                 <p class="lh-sm informations-content grey-font">
@@ -251,27 +259,29 @@
                 </p>
             </div>
             <div class="mb-3">
-                <p class="informations-title fs-5 fw-bold color1 mb-1 lora-regular">
+                <p class="informations-title fs-5 fw-bold color2 mb-1 lora-regular">
                     Accès :
                 </p>
                 <p class="lh-sm informations-content grey-font">Pour rejoindre Toulouse : <br>
                     Vous pouvez emprunter les autoroutes A10 ET A62 PARIS BORDEAUX TOULOUSE <br>
                     Vous pouvez arriver à l’aéroport international Toulouse Blagnac : <a
-                        href="http://www.toulouse.aeroport.fr" class="black">http://www.toulouse.aeroport.fr</a> <br>
+                        href="http://www.toulouse.aeroport.fr" class="color2">http://www.toulouse.aeroport.fr</a> <br>
                     La gare TGV située en centre ville est également une solution.</p>
             </div>
         </div>
+        <hr class="col-4 mx-auto mt-5 color2">
     </section>
 
     <!--Proposition tarifaire-->
 
-    <section class=" background2 p-md-5  mt-0  mt-md-5 shadow max-width-1200 nunito-regular " id="propositionTarifaire">
+    <section class=" gradient-radial-color1-color3 p-md-5  mt-0  mt-md-5 shadow max-width-1200 nunito-regular "
+        id="propositionTarifaire">
         <div class="border border-2  border-white rounded background3">
-            <div class="border border-2 m-md-1 py-5 rounded border-white background2 ">
+            <div class="border border-2 m-md-1 py-5 rounded border-white background2-05 ">
                 <p class="text-center white fs-1 fw-bold print-black lora-regular">PROPOSITION TARIFAIRE</p>
                 <hr class="white col-3 mx-auto mt-3">
                 <p class="text-center white fs-1 fw-bold lh-base print-black lora-regular">PRIX PAR PERSONNE : <br
-                        class="d-md-none d-print-none"><span>1111</span>&nbsp;€</p>
+                        class="d-md-none d-print-none"><span class=" px-4  py-2">1111&nbsp;€</span></p>
                 <div class="col-10 mx-auto mt-5 white">
                     <p class="mb-2 fs-4 mb-3 mb-md-2 print-black ">Options :</p>
                     <ul class="fs-4 lh-sm">
@@ -289,7 +299,7 @@
     </section>
 
     <!--assurances-->
-    <section class=" mt-0  mt-md-5 shadow max-width-1200 nunito-regular " id="assurances">
+    <section class=" mt-0  mt-md-5 shadow max-width-1200 nunito-regular background-white" id="assurances">
         <div class="col-10 mx-auto py-5 grey-font">
             <p class="fw-bold fs-5 mb-3 black">Assurances : Voyages en toute sérénité !</p>
             <p class="mb-2">Vous allez partir pour un beau voyage, il serait dommage de ne pas se protéger contre les
@@ -335,7 +345,7 @@
     </section>
 
     <!--CGV-->
-    <section class="mt-0  mt-md-5 shadow max-width-1200 nunito-regular" id="cgv">
+    <section class="mt-0  mt-md-5 shadow max-width-1200 nunito-regular background-white" id="cgv">
         <div class="col-10 mx-auto py-5 grey-font ">
             <p class="fw-bold mb-3 black"><span class="fs-5">Conditions générales de vente</span> <br>
                 Mise a jour du 1er avril 2020</p>
@@ -1209,9 +1219,12 @@
     </section>
 
     <!--formulaire-->
-    <section class="my-0 my-md-5 shadow max-width-1200 nunito-regular py-5 d-print-none" id="formulaire">
-        <div class="col-md-10 mx-auto p-md-5 border border-2 border-color1 rounded">
-            <p class="fs-2 text-center mb-4 col-md-10 col-11 mx-auto color1 fw-bold lora-regular">Pour valider le devis ou demander des
+    <section
+        class="my-0 my-md-5 shadow max-width-1200 nunito-regular py-md-5 d-print-none gradient-radial-color1-color3"
+        id="formulaire">
+        <div class="col-md-10 mx-auto p-md-5 py-5  rounded background-white">
+            <p class="fs-2 text-center mb-4 col-md-10 col-11 mx-auto color1 fw-bold lora-regular">Pour valider le devis
+                ou demander des
                 modifications,
                 merci
                 de remplir le

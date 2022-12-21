@@ -38,7 +38,7 @@ displayCgv.addEventListener("click", () => {
 let observer = new IntersectionObserver(
   (observables) => {
     for (let observable of observables) {
-      if (observable.intersectionRatio > 0.3) {
+      if (observable.intersectionRatio > 0.25) {
         observable.target.classList.remove("invisible");
       }
       //faire redisparaitre les sections
