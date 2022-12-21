@@ -220,7 +220,7 @@ grey font : #817d7a*/
 }
 /*fonts*/
 
-@font-face {
+/* @font-face {
   font-family: "nunito-regular";
   src: url('./assets/fonts/nunito/static/Nunito-Regular.ttf');
 }
@@ -228,14 +228,16 @@ grey font : #817d7a*/
 @font-face {
   font-family: "lora-regular";
   src: url('./assets/fonts/lora/static/Lora-Regular.ttf');
-}
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap'); 
 
 .nunito-regular {
   font-family: "nunito-regular";
 }
 
 .lora-regular {
-  font-family: "lora-regular";
+  font-family: "Lora";
 }
 /*shadows*/
 .color1-shadow {
