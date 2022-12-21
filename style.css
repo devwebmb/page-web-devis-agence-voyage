@@ -222,12 +222,12 @@ grey font : #817d7a*/
 
 @font-face {
   font-family: "nunito-regular";
-  src: url("/assets/fonts/nunito/static/Nunito-Regular.ttf");
+  src: url("./assets/fonts/nunito/static/Nunito-Regular.ttf");
 }
 
 @font-face {
   font-family: "lora-regular";
-  src: url("/assets/fonts/lora/static/Lora-Regular.ttf");
+  src: url("./assets/fonts/lora/static/Lora-Regular.ttf");
 }
 
 .nunito-regular {
