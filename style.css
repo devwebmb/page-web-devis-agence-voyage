@@ -226,7 +226,7 @@ grey font : #817d7a*/
 }
 
 @font-face {
-  font-family: "lora-regular";
+  font-family: "lora-regular", 'Times New Roman', Times, serif;
   src: url(assets\fonts\lora\static\Lora-Regular.ttf);
 }
 
