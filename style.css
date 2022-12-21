@@ -230,15 +230,17 @@ grey font : #817d7a*/
   src: url('./assets/fonts/lora/static/Lora-Regular.ttf');
 } */
 
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap'); 
+/* @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap'); 
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 .nunito-regular {
-  font-family: "nunito-regular";
+  font-family: "Nunito";
 }
 
 .lora-regular {
   font-family: "Lora";
-}
+} */
 /*shadows*/
 .color1-shadow {
   box-shadow: 0 0.125rem 0.75rem var(--color1);
