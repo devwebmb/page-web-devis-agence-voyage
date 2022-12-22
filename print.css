@@ -5,9 +5,23 @@
 }
 
 /*programme détaillé*/
-#programmePart {
+.programmePart {
   box-shadow: none !important;
+}
+
+.programmation-container {
+  border: none !important;
   page-break-after: always;
+} 
+
+.programmation-container > div {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.img-print {
+  height: 180px !important;
+  width: 180px !important;
 }
 
 /*informations pratiques*/

@@ -66,7 +66,7 @@ let observer = new IntersectionObserver(
 );
 
 const sections = document.querySelectorAll("section");
-const programme = document.getElementById("programmePart");
+const programme = document.getElementById("ancreProgramme");
 
 if (window.innerWidth > 1200) {
   programme.classList.add("invisible");
@@ -87,7 +87,11 @@ window.onbeforeprint = () => {
     section.classList.remove("invisible");
   }
   if (cgvView.classList.contains("d-none")) {
+    console.log("test");
     cgvView.classList.remove("d-none");
+  }
+  if (programme.classList.contains("invisible")) {
+    programme.classList.remove("invisible");
   }
 };
 
@@ -98,6 +102,9 @@ window.onafterprint = () => {
   if (!cgvView.classList.contains("d-none")) {
     cgvView.classList.add("d-none");
   }
+    if (!programme.classList.contains("invisible")) {
+      programme.classList.add("invisible");
+    }
 };
 
 /*carrousel*/
