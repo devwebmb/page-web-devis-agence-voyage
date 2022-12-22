@@ -111,38 +111,29 @@ const programmeContainers = document.getElementsByClassName(
 );
 
 /*Logique au click sur une image d'un carousel*/
-// for (let image of images) {
-//     image.addEventListener("click", () => {
-//       if (image.classList.contains("prev")) {
-//         image.classList.remove("prev");
-//         for (let image of images) {
-//           if (image.classList.contains("selected")) {
-//             image.classList.remove("selected");
-//             image.classList.add("prev");
-//           }
-//         }
-//         image.classList.add("selected");
-//       }
-//       if (image.classList.contains("next")) {
-//         image.classList.remove("next");
-//         for (let image of images) {
-//           if (image.classList.contains("selected")) {
-//             image.classList.remove("selected");
-//             image.classList.add("next");
-//           }
-//         }
-//         image.classList.add("selected");
-//       }
-//     });
-// }
-
 for (let image of images) {
-  image.addEventListener("click", () => {
-    for (let image of images) {
+    image.addEventListener("click", () => {
       if (image.classList.contains("prev")) {
-        image.classList.replace("prev", "selected");
-
+        image.classList.remove("prev");
+        for (let image of images) {
+          if (image.classList.contains("selected")) {
+            image.classList.remove("selected");
+            image.classList.add("prev");
+          }
+        }
+        image.classList.add("selected");
       }
-    }
-  });
+      if (image.classList.contains("next")) {
+        image.classList.remove("next");
+        for (let image of images) {
+          if (image.classList.contains("selected")) {
+            image.classList.remove("selected");
+            image.classList.add("next");
+          }
+        }
+        image.classList.add("selected");
+      }
+    });
 }
+
+
