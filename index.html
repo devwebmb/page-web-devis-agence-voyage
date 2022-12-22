@@ -16,7 +16,7 @@
     <!--style-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="print.css" media="print">
-  
+
     <title>Page devis agence web</title>
 </head>
 
@@ -73,8 +73,8 @@
     </div>
 
     <!--image introduction-->
-    <div id="headImage" class="d-print-none">
-        <div class="position-relative h-100">
+    <div id="headImage" class="d-print-none ">
+        <div class="position-relative h-100 ">
             <!--photos, logo, titre, date, contact, tèl-->
             <div class="d-md-flex  justify-content-md-between py-5  col-10 mx-auto ">
                 <div class="d-flex justify-content-center">
@@ -107,7 +107,7 @@
     </div>
 
     <!--Agent de réservation, présentation-->
-    <section class="shadow mt-0  mt-md-5 max-width-1200 nunito-regular background-white" id="presentation-part">
+    <section class="shadow mt-0  mt-md-5 max-width-1200 nunito-regular background-white rounded" id="presentation-part">
         <p class="text-center  py-5 pb-4 fs-2  fw-bold d-none d-print-block lora-regular">TITRE DU SEJOUR</p>
         <p class="text-center fs-2 d-none d-print-block lora-regular">Date du <span>20 décembre au 25 décembre
                 2023</span></p>
@@ -161,21 +161,27 @@
 
     <!--section programme par jour-->
 
-    <section class="shadow d-flex flex-wrap mt-0  mt-md-5 py-5 max-width-1200 nunito-regular background-white"
+    <div class="shadow d-flex flex-wrap mt-0  mt-md-5 py-5 max-width-1200 nunito-regular background-white rounded"
         id="programmePart">
-        <div class="">
-            <div class="d-flex flex-column background1 white justify-content-center py-3 rounded-pill col-9 mx-auto">
-                <div class="d-flex justify-content-center mb-3">
-                    <p class="fs-5">Jour 1,&nbsp;</p>
-                    <p class="fs-5">date&nbsp;:</p>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <p class="fs-1">Ville ou programme</p>
+        <p class="text-center color1 fs-2 fw-bold col-10 mx-auto lora-regular pb-4">Programme</p>
+        <hr class="color1 col-4 mx-auto mt-3 mb-5">
+        <div class="mx-5 mb-5 border border-2 rounded py-5 border-color1 programmation-container">
+            <div class="d-flex justify-content-center">
+                <div
+                    class="d-inline-block gradient-linear-color1 white justify-content-center py-3 px-5 rounded-pill  mx-auto lora-regular">
+                    <div class="d-flex justify-content-center mb-3">
+                        <p class="fs-5">Jour 1,&nbsp;</p>
+                        <p class="fs-5">date&nbsp;:</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <p class="fs-2">Ville ou programme</p>
+                    </div>
                 </div>
             </div>
-            <div class="d-flex">
-                <div class="col-8 p-3 grey-font lh-base d-flex align-items-center">
+            <div class="d-flex mt-5 px-5 flex-wrap">
+                <div class="col-12 p-3 grey-font lh-base d-flex align-items-center nunito-regular">
                     <div class="col-10 mx-auto">
+                        <p class="text-center mb-3 fs-2 color2 lora-regular">Programme</p>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, dolorem cumque hic incidunt
                             consequuntur rem natus debitis consectetur deserunt dicta asperiores, dolore corrupti
                             tempore
@@ -190,51 +196,136 @@
                             cum
                             quod adipisci quae, laudantium cumque corporis voluptas deserunt nobis omnis a odit dicta
                             vero.
-
                         </p>
-                        <hr class="col-6 mx-auto color1 mt-4">
+                        <hr class="col-6 mx-auto color2 mt-4">
                     </div>
                 </div>
-                <div class="col-4 mx-auto">
+                <!--carrousel-->
+                <div class="col-12 d-flex position-relative" id="carrousel">
+                    <div class="prev carrousel-img cursor-pointer">
+                        <img src="./assets/images/corsica-g283ed7d04_1920.jpg" class="rounded">
+                    </div>
 
-                    <div id="carouselJour1"
-                        class="carousel slide border border-2 p-3 col-10 mx-auto my-5 rounded border-color1"
-                        data-bs-ride="carousel">
-                        <div class="carousel-inner h-100 ">
-                            <div class="carousel-item active h-100">
-                                <img src="./assets/images/corsican-g684c61c5d_1920.jpg"
-                                    class="d-block w-100 h-100 cover" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./assets/images/corsica-g283ed7d04_1920.jpg" class="d-block w-100 h-100 cover"
-                                    alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./assets/images/hd-wallpaper-gbec1618a0_1920.jpg"
-                                    class="d-block w-100 h-100 cover" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselJour1"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselJour1"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                    <div class="selected carrousel-img rounded cursor-pointer">
+                        <img src="./assets/images/corsican-g684c61c5d_1920.jpg" class="cover rounded">
+                    </div>
+
+                    <div class="next carrousel-img cursor-pointer">
+                        <img src="./assets/images/hd-wallpaper-gbec1618a0_1920.jpg" class="rounded">
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="mx-5 mb-5 border border-2 rounded py-5 border-color1 programmation-container">
+            <div class="d-flex justify-content-center">
+                <div
+                    class="d-inline-block gradient-linear-color1 white justify-content-center py-3 px-5 rounded-pill  mx-auto lora-regular">
+                    <div class="d-flex justify-content-center mb-3">
+                        <p class="fs-5">Jour 1,&nbsp;</p>
+                        <p class="fs-5">date&nbsp;:</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <p class="fs-2">Ville ou programme</p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex mt-5 px-5 flex-wrap">
+                <div class="col-12 p-3 grey-font lh-base d-flex align-items-center nunito-regular">
+                    <div class="col-10 mx-auto">
+                        <p class="text-center mb-3 fs-2 color2 lora-regular">Programme</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, dolorem cumque hic incidunt
+                            consequuntur rem natus debitis consectetur deserunt dicta asperiores, dolore corrupti
+                            tempore
+                            labore
+                            non mollitia temporibus sit. Delectus, quam quis vitae voluptates odit dicta quibusdam ullam
+                            cupiditate rem non deserunt mollitia et officia amet aspernatur inventore! Eaque,
+                            praesentium.
+                        </p>
+                        <br>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex ratione esse similique,
+                            explicabo,
+                            cum
+                            quod adipisci quae, laudantium cumque corporis voluptas deserunt nobis omnis a odit dicta
+                            vero.
+                        </p>
+                        <hr class="col-6 mx-auto color2 mt-4">
+                    </div>
+                </div>
+                <!--carrousel-->
+                <div class="col-12 d-flex position-relative" id="carrousel">
+                    <div class="prev carrousel-img cursor-pointer">
+                        <img src="./assets/images/corsica-g283ed7d04_1920.jpg" class="rounded">
+                    </div>
+
+                    <div class="selected carrousel-img rounded cursor-pointer">
+                        <img src="./assets/images/corsican-g684c61c5d_1920.jpg" class="cover rounded">
+                    </div>
+
+                    <div class="next carrousel-img cursor-pointer">
+                        <img src="./assets/images/hd-wallpaper-gbec1618a0_1920.jpg" class="rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mx-5 mb-5 border border-2 rounded py-5 border-color1 programmation-container">
+            <div class="d-flex justify-content-center">
+                <div
+                    class="d-inline-block gradient-linear-color1 white justify-content-center py-3 px-5 rounded-pill  mx-auto lora-regular">
+                    <div class="d-flex justify-content-center mb-3">
+                        <p class="fs-5">Jour 1,&nbsp;</p>
+                        <p class="fs-5">date&nbsp;:</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <p class="fs-2">Ville ou programme</p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex mt-5 px-5 flex-wrap">
+                <div class="col-12 p-3 grey-font lh-base d-flex align-items-center nunito-regular">
+                    <div class="col-10 mx-auto">
+                        <p class="text-center mb-3 fs-2 color2 lora-regular">Programme</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, dolorem cumque hic incidunt
+                            consequuntur rem natus debitis consectetur deserunt dicta asperiores, dolore corrupti
+                            tempore
+                            labore
+                            non mollitia temporibus sit. Delectus, quam quis vitae voluptates odit dicta quibusdam ullam
+                            cupiditate rem non deserunt mollitia et officia amet aspernatur inventore! Eaque,
+                            praesentium.
+                        </p>
+                        <br>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex ratione esse similique,
+                            explicabo,
+                            cum
+                            quod adipisci quae, laudantium cumque corporis voluptas deserunt nobis omnis a odit dicta
+                            vero.
+                        </p>
+                        <hr class="col-6 mx-auto color2 mt-4">
+                    </div>
+                </div>
+                <!--carrousel-->
+                <div class="col-12 d-flex position-relative" id="carrousel">
+                    <div class="prev carrousel-img cursor-pointer">
+                        <img src="./assets/images/corsica-g283ed7d04_1920.jpg" class="rounded">
+                    </div>
+
+                    <div class="selected carrousel-img rounded cursor-pointer">
+                        <img src="./assets/images/corsican-g684c61c5d_1920.jpg" class="cover rounded">
+                    </div>
+
+                    <div class="next carrousel-img cursor-pointer">
+                        <img src="./assets/images/hd-wallpaper-gbec1618a0_1920.jpg" class="rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </div>
 
     <!--section informations pratiques-->
 
-    <section class=" shadow mt-0  mt-md-5 py-5 max-width-1200 nunito-regular background-white"
+    <section class=" shadow mt-0  mt-md-5 py-5 max-width-1200 nunito-regular background-white rounded"
         id="informationsPratiques">
-        <p class="text-center color1 fs-1 fw-bold col-10 mx-auto lora-regular pb-4">INFORMATIONS PRATIQUES</p>
+        <p class="text-center color1 fs-2 fw-bold col-10 mx-auto lora-regular pb-4">INFORMATIONS PRATIQUES</p>
         <hr class="color1 col-4 mx-auto mt-3">
         <div class="col-10 mt-5 mx-auto">
             <div class="mb-3">
@@ -281,7 +372,7 @@
 
     <!--Proposition tarifaire-->
 
-    <section class=" gradient-radial-color1-color3 p-md-5  mt-0  mt-md-5 shadow max-width-1200 nunito-regular "
+    <section class=" gradient-radial-color1-color3 p-md-5  mt-0  mt-md-5 shadow max-width-1200 nunito-regular rounded"
         id="propositionTarifaire">
         <div class="border border-2  border-white rounded background3">
             <div class="border border-2 m-md-1 py-5 rounded border-white background2-05 ">
@@ -306,7 +397,7 @@
     </section>
 
     <!--assurances-->
-    <section class=" mt-0  mt-md-5 shadow max-width-1200 nunito-regular background-white" id="assurances">
+    <section class=" mt-0  mt-md-5 shadow max-width-1200 nunito-regular background-white rounded" id="assurances">
         <div class="col-10 mx-auto py-5 grey-font">
             <p class="fw-bold fs-5 mb-3 black">Assurances : Voyages en toute sérénité !</p>
             <p class="mb-2">Vous allez partir pour un beau voyage, il serait dommage de ne pas se protéger contre les
@@ -352,7 +443,7 @@
     </section>
 
     <!--CGV-->
-    <section class="mt-0  mt-md-5 shadow max-width-1200 nunito-regular background-white" id="cgv">
+    <section class="mt-0  mt-md-5 shadow max-width-1200 nunito-regular background-white rounded" id="cgv">
         <div class="col-10 mx-auto py-5 grey-font ">
             <p class="fw-bold mb-3 black"><span class="fs-5">Conditions générales de vente</span> <br>
                 Mise a jour du 1er avril 2020</p>
@@ -1227,7 +1318,7 @@
 
     <!--formulaire-->
     <section
-        class="my-0 my-md-5 shadow max-width-1200 nunito-regular py-md-5 d-print-none gradient-radial-color1-color3"
+        class="my-0 my-md-5 shadow max-width-1200 nunito-regular py-md-5 d-print-none gradient-radial-color1-color3 rounded"
         id="formulaire">
         <div class="col-md-10 mx-auto p-md-5 py-5  rounded background-white">
             <p class="fs-2 text-center mb-4 col-md-10 col-11 mx-auto color1 fw-bold lora-regular">Pour valider le devis

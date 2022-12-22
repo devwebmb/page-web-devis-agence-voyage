@@ -33,6 +33,19 @@ displayCgv.addEventListener("click", () => {
 });
 
 /*effet au scroll*/
+/*création observer sur programme detaillé*/
+let programmeObserver = new IntersectionObserver(
+  (observables) => {
+    for (let observable of observables) {
+      if (observable.intersectionRatio > 0) {
+        observable.target.classList.remove("invisible");
+      }
+    }
+  },
+  {
+    threshold: [0.05],
+  }
+);
 
 /*création observer sur section pour affichage au scroll*/
 let observer = new IntersectionObserver(
@@ -53,6 +66,12 @@ let observer = new IntersectionObserver(
 );
 
 const sections = document.querySelectorAll("section");
+const programme = document.getElementById("programmePart");
+
+if (window.innerWidth > 1200) {
+  programme.classList.add("invisible");
+  programmeObserver.observe(programme);
+}
 
 for (let section of sections) {
   if (window.innerWidth > 1200) {
@@ -80,3 +99,50 @@ window.onafterprint = () => {
     cgvView.classList.add("d-none");
   }
 };
+
+/*carrousel*/
+
+/*class sur toutes les images ds carousels, récupère toute les images*/
+const images = document.getElementsByClassName("carrousel-img");
+
+/*Récupère tous les containers de carousel*/
+const programmeContainers = document.getElementsByClassName(
+  "programmation-container"
+);
+
+/*Logique au click sur une image d'un carousel*/
+// for (let image of images) {
+//     image.addEventListener("click", () => {
+//       if (image.classList.contains("prev")) {
+//         image.classList.remove("prev");
+//         for (let image of images) {
+//           if (image.classList.contains("selected")) {
+//             image.classList.remove("selected");
+//             image.classList.add("prev");
+//           }
+//         }
+//         image.classList.add("selected");
+//       }
+//       if (image.classList.contains("next")) {
+//         image.classList.remove("next");
+//         for (let image of images) {
+//           if (image.classList.contains("selected")) {
+//             image.classList.remove("selected");
+//             image.classList.add("next");
+//           }
+//         }
+//         image.classList.add("selected");
+//       }
+//     });
+// }
+
+for (let image of images) {
+  image.addEventListener("click", () => {
+    for (let image of images) {
+      if (image.classList.contains("prev")) {
+        image.classList.replace("prev", "selected");
+
+      }
+    }
+  });
+}
