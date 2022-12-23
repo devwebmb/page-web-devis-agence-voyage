@@ -429,7 +429,7 @@ nav .nav-item a {
 #carrousel .prev:hover {
   filter: brightness(0.9);
   opacity: 1;
-  transform: translateY(50px) translateX(-50%) scale(1.05);
+  transform: translateY(50px) translateX(-50%) scale(1.15);
 }
 
 #carrousel .prev img {
@@ -448,7 +448,7 @@ nav .nav-item a {
 #carrousel .next:hover {
   filter: brightness(0.9);
   opacity: 1;
-  transform: translateY(50px) translateX(-50%) scale(1.05);
+  transform: translateY(50px) translateX(-50%) scale(1.15);
 }
 
 #carrousel .next img {
