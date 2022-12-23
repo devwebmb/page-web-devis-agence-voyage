@@ -383,43 +383,10 @@ nav .nav-item a {
 
 /*programme part*/
 
-/*proposition tarifaire*/
-
-@media screen and (max-width: 768px) {
-  #propositionTarifaire > div {
-    border: none !important;
-  }
-  #propositionTarifaire > div > div {
-    border: none !important;
-  }
-}
-
-/*formulaire*/
-
-@media screen and (max-width: 768px) {
-  #formulaire > div {
-    border: none !important;
-  }
-}
-
-/*apparition au scroll*/
-
-.invisible {
-  opacity: 0;
-  transform: translateY(200px);
-}
-
-section, .programmePart {
-  opacity: 1;
-  transition: transform 1s, opacity 1s;
-}
-
-/*carrousel*/
+/*carrousel desktop tablette*/
 
 #carrousel {
   height: 400px;
-  /* top: 50%; */
-  /* transform: translateY(-50%); */
   overflow: hidden;
 }
 
@@ -481,4 +448,84 @@ section, .programmePart {
 #carrousel .next img {
   width: 300px;
   height: 300px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1150px) {
+  #carrousel {
+    height: 300px;
+    overflow: hidden;
+  }
+  #carrousel > div > img {
+    width: 450px;
+    height: 300px;
+  }
+
+  #carrousel .next img,
+  #carrousel .prev img {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+/*carrousel mobile*/
+.mobileCarrousel {
+  height: 300px;
+  overflow: hidden;
+}
+
+.mobileCarrousel > div,
+.mobileCarrousel > div > div,
+.mobileCarrousel > div > div > img {
+  height: 300px;
+}
+
+@media screen and (max-width: 768px) {
+  .programmation-container {
+    border: none !important;
+  }
+}
+
+/*scroll horizontal*/
+
+/* @media screen and (max-width: 768px) {
+  .scroll-horizontal {
+    width: 400vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+  }
+   .scroll-horizontal > div {
+    width: 100vw;
+   }
+} */
+
+/*proposition tarifaire*/
+
+@media screen and (max-width: 768px) {
+  #propositionTarifaire > div {
+    border: none !important;
+  }
+  #propositionTarifaire > div > div {
+    border: none !important;
+  }
+}
+
+/*formulaire*/
+
+@media screen and (max-width: 768px) {
+  #formulaire > div {
+    border: none !important;
+  }
+}
+
+/*apparition au scroll*/
+
+.invisible {
+  opacity: 0;
+  transform: translateY(200px);
+}
+
+section,
+.programmePart {
+  opacity: 1;
+  transition: transform 1s, opacity 1s;
 }
