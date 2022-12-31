@@ -337,15 +337,29 @@ html {
 #headImage {
   background-image: url("./assets/images/ancienne-eglise-paroissiale-de-sant-appiano_zoom.jpg");
   height: 50vh;
+  min-height: 300px;
   width: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 360px) {
-  #headImage {
-    height: 70vh;
+@media screen and (max-width:576px) {
+  #titreSejour div .titre-sejour {
+    font-size: 24px !important;
+  }
+  #titreSejour div .date-sejour {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #titreSejour {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 500px;
   }
 }
 
@@ -365,7 +379,7 @@ nav .nav-item a {
   border-color: var(--white);
 }
 
-#navTitre {
+#navPhone {
   height: 100px;
 }
 
@@ -378,16 +392,15 @@ nav .nav-item a {
   border: solid 1px var(--color2);
 }
 
-@media screen and (min-width: 768px) {
-  #titreSejour {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
+
 
 /*programme part*/
+
+/*image jour une seule image */
+
+.img-jour {
+  height: 300px;
+}
 
 /*carrousel desktop tablette*/
 
@@ -513,7 +526,7 @@ nav .nav-item a {
 
 .invisible {
   opacity: 0;
-  transform: translateY(200px);
+  transform: translateX(300px);
 }
 
 section,
