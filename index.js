@@ -144,3 +144,9 @@ for (let image of images) {
 }
 
 
+/*Bouton print page */
+
+const print_page = () => {
+  window.print()
+}
+

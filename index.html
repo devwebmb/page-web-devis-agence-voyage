@@ -20,13 +20,14 @@
     <title>Page devis agence web</title>
 </head>
 
-<body class="gradient-radial-color1-color3">
+<body class="gradient-radial-color1-color3 " id="top">
     <!--navbar en version desktop tablette et mobile-->
     <div class="background-white sticky-top">
-        <header class="d-flex d-print-none justify-content-between d-xl-block gradient-linear-color1  ">
+        <header
+            class="d-flex d-print-none justify-content-between d-xl-block gradient-linear-color1  position-relative">
             <nav class="navbar navbar-expand-xl navbar-light lora-regular">
                 <div class="container-fluid px-0 ">
-                    <div class="d-flex justify-content-center ps-5 ps-xl-0 my-2">
+                    <div class="d-flex justify-content-center ps-3 ps-xl-0 my-2">
                         <div class="border-white border border-2 rounded navbar-toggler p-1" type="button"
                             data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,10 +68,25 @@
                     </div>
                 </div>
             </nav>
-            <div class="fs-4 white d-flex align-items-center pe-5 d-xl-none" id="navPhone"><img src="./assets/icones/telephoneblanc.svg" alt="Icone d'un téléphone">
-            <span class="ps-2 lora-regular">00 00
-                00
-                00 00</span></div>
+            <div class="fs-4 white d-flex align-items-center d-xl-none" id="navPhone"><img
+                    src="./assets/icones/telephoneblanc.svg" alt="Icone d'un téléphone">
+                <span class="ps-2 lora-regular">00 00
+                    00
+                    00 00</span>
+            </div>
+            <div class="d-flex">
+                <!--Bouton d'impression-->
+                <div class="d-flex align-items-center print-icon pe-3 pe-xl-0  cursor-pointer" onclick="print_page()">
+                    <img src="./assets/icones/printer-fill.svg" alt=""
+                        class="border border-2 p-1 border-color-white rounded-circle">
+                </div>
+                <!--Bouton de partage-->
+                <div class="d-flex align-items-center pe-3 share-icon cursor-pointer" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    <img src="./assets/icones/share-fill.svg" alt=""
+                        class="border border-2 p-1 border-color-white rounded-circle">
+                </div>
+            </div>
         </header>
     </div>
 
@@ -106,6 +122,11 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <!--Logo en version print-->
+    <div class="d-none d-print-flex justify-content-center mt-5">
+        <img src="./assets/images/a-la-carte-corsica-logo.png" alt="Logo">
     </div>
 
     <!--Agent de réservation, présentation-->
@@ -209,32 +230,16 @@
                                 vero.
                             </p>
                             <hr class="col-6 mx-auto color2 mt-4 ">
-                            <!--print images-->
-                            <div class="col-12 d-none d-print-flex flex-column">
-                                <div class="d-flex justify-content-between mb-3">
-                                    <div class=" img-print">
-                                        <img src="./assets/images/corsica-g283ed7d04_1920.jpg" alt=""
-                                            class="cover h-100 w-100">
-                                    </div>
-                                    <div class=" img-print">
-                                        <img src="./assets/images/corsican-g684c61c5d_1920.jpg" alt=""
-                                            class="cover h-100 w-100">
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-center">
-                                    <div class=" img-print">
-                                        <img src="./assets/images/hd-wallpaper-gbec1618a0_1920.jpg" alt=""
-                                            class="cover h-100 w-100">
-                                    </div>
-                                </div>
+                            <!--image version print-->
+                            <div class="d-none d-print-flex w-100 simple-img-print">
+                                <img src="./assets/images/corsica-g283ed7d04_1920.jpg" alt="" class="cover h-100 w-100">
                             </div>
                         </div>
-
                     </div>
                     <!--image-->
-                    <div class="col-11 mx-auto   d-print-none img-jour " >   
-                        <img src="./assets/images/corsican-g684c61c5d_1920.jpg" alt="" class="w-100 h-100 cover">                    
-                    </div>         
+                    <div class="col-11 mx-auto   d-print-none img-jour ">
+                        <img src="./assets/images/corsican-g684c61c5d_1920.jpg" alt="" class="w-100 h-100 cover">
+                    </div>
                 </div>
             </div>
             <!--programme d'une journée version carousel-->
@@ -312,7 +317,7 @@
                         </div>
                     </div>
                     <!--version mobile-->
-                    <div class="carousel slide d-md-none col-10 mx-auto col-md-12 mobileCarrousel"
+                    <div class="carousel slide d-md-none d-print-none col-10 mx-auto col-md-12 mobileCarrousel"
                         data-bs-ride="carousel" id="carousselJour2">
                         <div class="carousel-inner rounded">
                             <div class="carousel-item active ">
@@ -1391,6 +1396,39 @@
         </div>
     </section>
 
+    <!--Bouton remonter dans la page-->
+    <div class=" arrow-up">
+        <a href="#top"><img src="./assets/icones/arrow-up-circle-fill.svg" alt=""></a>
+    </div>
+
+    <!--modal partage par email-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title lora-regular fs-4" id="exampleModalLabel">Partager le devis</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <label for="exampleInputEmail1" class="form-check-label mb-3 nunito-regular">Adresse email
+                            destinataire</label>
+                        <input type="email" class="form-control mb-3" id="exampleInputEmail1"
+                            aria-describedby="emailHelp">
+                        <div class="mb-3">
+                            <label for="validationTextarea" class="form-check-label mb-3 nunito-regular">Message</label>
+                            <textarea rows="4" class="form-control " id="validationTextarea"
+                                placeholder="Entrez votre message"></textarea>
+                        </div>
+                        <div class="d-flex justify-content-center  mt-4 mt-md-0">
+                            <button type="submit" class="button px-4 py-2 rounded fs-3">Envoyer</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <!--Script bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"

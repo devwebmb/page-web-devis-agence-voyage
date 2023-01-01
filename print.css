@@ -20,8 +20,12 @@
 }
 
 .img-print {
-  height: 180px !important;
-  width: 180px !important;
+  height:300px !important;
+  width: 380px !important;
+}
+
+.simple-img-print {
+  width: 800px !important;
 }
 
 /*informations pratiques*/
