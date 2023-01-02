@@ -1,18 +1,25 @@
+/*body*/
+body {
+  background: red !important;
+}
+
 /*presentation part*/
 #presentation-part {
   box-shadow: none !important;
-  page-break-after: always;
+  page-break-after: always !important;
 }
 
 /*programme détaillé*/
 .programmePart {
   box-shadow: none !important;
+  page-break-after: always !important;
 }
 
 .programmation-container {
   border: none !important;
-  page-break-after: always;
-} 
+  page-break-after: always !important;
+  height: 31cm !important;
+}
 
 .programmation-container > div {
   padding: 0 !important;
@@ -20,7 +27,7 @@
 }
 
 .img-print {
-  height:300px !important;
+  height: 300px !important;
   width: 380px !important;
 }
 
