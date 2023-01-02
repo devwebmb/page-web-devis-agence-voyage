@@ -1,6 +1,6 @@
 /*body*/
 body {
-  background: white !important;
+  background: none !important;
 }
 
 /*presentation part*/
@@ -35,6 +35,10 @@ body {
   width: 800px !important;
 }
 
+.capsule-jour {
+  background: #b88434;
+}
+
 /*informations pratiques*/
 #informationsPratiques {
   box-shadow: none !important;
@@ -45,6 +49,11 @@ body {
 #propositionTarifaire {
   box-shadow: none !important;
   page-break-after: always;
+  background: none;
+}
+.background-print-tarif {
+  background: none;
+  border: none;
 }
 
 .print-black {
