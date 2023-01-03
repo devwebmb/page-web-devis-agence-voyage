@@ -49,12 +49,12 @@ body {
 #propositionTarifaire {
   box-shadow: none !important;
   page-break-after: always;
-  background: none;
+  /* background: none; */
 }
-.background-print-tarif {
+/* .background-print-tarif {
   background: none;
   border: none;
-}
+} */
 
 .print-black {
   color: black;
